@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutY="41.0" prefHeight="72.0" prefWidth="1137.0" style="-fx-background-color: #258bbf;" text="Complaint" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="160.0" prefHeight="30.0" prefWidth="359.0" text="what is your assessment of the service?" textFill="#258bbf">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="111.0" layoutY="264.0" prefHeight="30.0" prefWidth="359.0" text="what is the percentage of your benefit " textFill="#258bbf">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

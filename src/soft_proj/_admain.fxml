@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="678.0" prefWidth="1128.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soft_proj.controller_of_manger">
+    <children>
+        <Pane layoutX="53.0" layoutY="38.0" prefHeight="88.0" prefWidth="1075.0" style="-fx-background-color: #1E90FF;">
+            <children>
+                <Label layoutX="143.0" layoutY="21.0" prefHeight="48.0" prefWidth="219.0" text="Manager Portal" textFill="WHITE">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                </Label>
+                <JFXButton layoutX="898.0" layoutY="26.0" onAction="#exit" prefHeight="35.0" prefWidth="99.0" style="-fx-background-color: #ffffff;" text="Logout" textFill="DODGERBLUE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </Pane>
+        <Circle fill="DODGERBLUE" layoutX="104.0" layoutY="80.0" radius="71.0" stroke="DODGERBLUE" strokeType="INSIDE" />
+        <ImageView fitHeight="136.0" fitWidth="121.0" layoutX="44.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@z15.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="33.0" layoutY="183.0" prefHeight="439.0" prefWidth="248.0" style="-fx-background-color: #1E90FF;" text="Welcome to manager portal" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <font>
+                <Font name="Bell MT" size="38.0" />
+            </font>
+        </Label>
+        <GridPane hgap="10.0" layoutX="324.0" layoutY="183.0" prefHeight="439.0" prefWidth="742.0" vgap="10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <JFXButton onAction="#doctor" contentDisplay="TOP" prefHeight="210.0" prefWidth="365.0" style="-fx-background-color: #FFFFFF;" text="Doctor Details" textFill="DODGERBLUE">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="120.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@z11.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <JFXButton onAction="#student" contentDisplay="TOP" prefHeight="214.0" prefWidth="364.0" style="-fx-background-color: #FFFFFF;" text="Student details" textFill="DODGERBLUE" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="117.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@z14.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <JFXButton onAction="#research" contentDisplay="TOP" prefHeight="215.0" prefWidth="383.0" style="-fx-background-color: #FFFFFF;" text="Research Details" textFill="DODGERBLUE" GridPane.columnIndex="1">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="113.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@z12.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+                <JFXButton onAction="#client" contentDisplay="TOP" prefHeight="213.0" prefWidth="365.0" style="-fx-background-color: FFFFFF;" text="Client Details" textFill="DODGERBLUE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="21.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="116.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@z13.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1128.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soft_proj.controller_of_login">
+   <children>
+      <ImageView fitHeight="678.0" fitWidth="1128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@z1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="-3.0" layoutY="74.0" prefHeight="70.0" prefWidth="1136.0" style="-fx-background-color: #1E90FF; -fx-opacity: 0.9;" text="login As">
+         <graphic>
+            <ImageView fitHeight="54.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="fb" layoutX="788.0" layoutY="591.0" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: #ffffff; -fx-opacity: .7;" text="facebook">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z7.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="twitter" layoutX="788.0" layoutY="630.0" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: #ffffff; -fx-opacity: .7;" text="twitter">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z4.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="inst" layoutX="909.0" layoutY="591.0" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: #ffffff; -fx-opacity: .7;" text="instagram">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z6.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="you" layoutX="909.0" layoutY="630.0" prefHeight="37.0" prefWidth="114.0" style="-fx-background-color: #ffffff; -fx-opacity: .7;" text="youtube">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z5.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="dis" layoutX="456.0" layoutY="594.0" prefHeight="72.0" prefWidth="218.0" text="discover us">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Hyperlink>
+      <JFXButton layoutX="128.0" layoutY="589.0" onAction="#com" opacity="0.6" prefHeight="82.0" prefWidth="218.0" style="-fx-background-color: #ffffff;" text="Complaint">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </JFXButton>
+      <Pane fx:id="p1" layoutX="368.0" layoutY="164.0" opacity="0.7" prefHeight="416.0" prefWidth="393.0" style="-fx-background-color: #ffffff; -fx-background-radius: 100;" visible="false">
+         <children>
+            <Label layoutX="135.0" layoutY="54.0" prefHeight="42.0" prefWidth="124.0" text="Sign In">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+            <TextField fx:id="user" layoutX="119.0" layoutY="137.0" prefHeight="50.0" prefWidth="212.0" promptText="UserName" style="-fx-background-color: #4400bb;">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <ImageView fitHeight="50.0" fitWidth="58.0" layoutX="69.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z17.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="pass" layoutX="119.0" layoutY="208.0" prefHeight="50.0" prefWidth="212.0" promptText="PassWord" style="-fx-background-color: #4400bb;">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </PasswordField>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="69.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z18.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="69.0" layoutY="275.0" onAction="#log" prefHeight="50.0" prefWidth="262.0" style="-fx-background-color: #4400bb; -fx-background-radius: 10;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </JFXButton>
+            <JFXToggleButton fx:id="toggel" layoutX="161.0" layoutY="337.0" prefHeight="58.0" prefWidth="50.0" unToggleColor="#009688" unToggleLineColor="#77c2bb" />
+            <Label fx:id="l1" layoutX="88.0" layoutY="353.0" text="Admain">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="l2" layoutX="246.0" layoutY="353.0" text="Doctor">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="312.0" layoutY="36.0" onAction="#back" prefHeight="36.0" prefWidth="38.0" text="  ">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@z8.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="p2" layoutY="164.0" prefHeight="348.0" prefWidth="1128.0">
+         <children>
+            <JFXButton layoutX="186.0" layoutY="117.0" onAction="#internal" prefHeight="135.0" prefWidth="135.0" style="-fx-background-radius: 100; -fx-background-color: #ffffff; -fx-opacity: .8;" text="Internal" textFill="DODGERBLUE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="500.0" layoutY="110.0" onAction="#external" prefHeight="135.0" prefWidth="135.0" style="-fx-background-radius: 100; -fx-background-color: #ffffff; -fx-opacity: .8;" text="External" textFill="DODGERBLUE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="814.0" layoutY="117.0" onAction="#other" prefHeight="135.0" prefWidth="135.0" style="-fx-background-radius: 100; -fx-background-color: #ffffff; -fx-opacity: .8;" text="Other" textFill="DODGERBLUE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>

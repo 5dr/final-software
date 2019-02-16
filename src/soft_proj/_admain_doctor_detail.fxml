@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1127.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soft_proj.controller_manger_doctor_detail">
+   <children>
+      <Pane prefHeight="25.0" prefWidth="1127.0" style="-fx-background-color: #dadada;">
+         <children>
+            <JFXButton layoutX="-7.0" onAction="#add" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #b8b8b8;" text="Add Doctor" />
+            <JFXButton layoutX="83.0" onAction="#search" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #b8b8b8;" text="Search Doctor" />
+            <JFXButton layoutX="173.0" onAction="#update" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #b8b8b8;" text="Update Doctor" />
+            <JFXButton layoutX="263.0" onAction="#delet" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #b8b8b8;" text="Delet Doctor" />
+            <JFXButton layoutX="353.0" onAction="#table" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #b8b8b8;" text="View Doctor" />
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutY="25.0" prefHeight="655.0" prefWidth="1127.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="fname" prefWidth="75.0" text="F_Name" />
+            <TableColumn fx:id="lname" prefWidth="75.0" text="L_Name" />
+            <TableColumn fx:id="dob" prefWidth="100.0" text="D_O_B" />
+            <TableColumn fx:id="address" prefWidth="100.0" text="Email" />
+            <TableColumn fx:id="phone" prefWidth="100.0" text="Adress" />
+            <TableColumn fx:id="gender" prefWidth="75.0" text="Gender" />
+            <TableColumn fx:id="ms" prefWidth="75.0" text="M_Status" />
+            <TableColumn fx:id="email" prefWidth="140.0" text="Phone" />
+            <TableColumn fx:id="salary" prefWidth="100.0" text="Salary" />
+            <TableColumn fx:id="user" prefWidth="111.0" text="User Name" />
+            <TableColumn fx:id="pass" prefWidth="98.0" text="Password" />
+        </columns>
+      </TableView>
+      <Pane fx:id="p_seach" layoutY="25.0" prefHeight="655.0" prefWidth="1127.0" style="-fx-background-color: #dddddd;">
+         <children>
+            <Label layoutX="109.0" layoutY="31.0" prefHeight="72.0" prefWidth="1018.0" style="-fx-background-color: #258bbf;" text="  Search Doctor" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="160.0" prefHeight="25.0" prefWidth="70.0" text="Doctor ID" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="s_id" focusColor="BLACK" layoutX="151.0" layoutY="154.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="68.0" layoutY="268.0" prefHeight="25.0" prefWidth="70.0" text="F_Name" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="s_fn" focusColor="BLACK" layoutX="151.0" layoutY="262.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="s_ln" focusColor="BLACK" layoutX="487.0" layoutY="262.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="408.0" layoutY="268.0" prefHeight="25.0" prefWidth="70.0" text="L_Name" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="331.0" prefHeight="25.0" prefWidth="70.0" text="D_O_B" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="s_dof" focusColor="BLACK" layoutX="151.0" layoutY="325.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="s_phone" focusColor="BLACK" layoutX="151.0" layoutY="393.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="s_gender" focusColor="BLACK" layoutX="151.0" layoutY="460.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="s_ms" focusColor="BLACK" layoutX="151.0" layoutY="523.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="s_address" focusColor="BLACK" layoutX="487.0" layoutY="325.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="402.0" layoutY="326.0" prefHeight="25.0" prefWidth="70.0" text="Address" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="400.0" prefHeight="25.0" prefWidth="70.0" text="Phone" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="463.0" prefHeight="25.0" prefWidth="70.0" text="Gender" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="531.0" prefHeight="25.0" prefWidth="70.0" text="M_Status" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="s_email" focusColor="BLACK" layoutX="487.0" layoutY="394.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="s_salary" focusColor="BLACK" layoutX="487.0" layoutY="460.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="s_user" focusColor="BLACK" layoutX="487.0" layoutY="523.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="404.0" layoutY="404.0" prefHeight="25.0" prefWidth="70.0" text="Email" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="394.0" layoutY="467.0" prefHeight="25.0" prefWidth="70.0" text="Salary" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="382.0" layoutY="525.0" prefHeight="25.0" prefWidth="77.0" text="Username" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="598.0" prefHeight="25.0" prefWidth="70.0" text="password" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="s_pass" focusColor="BLACK" layoutX="150.0" layoutY="587.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton contentDisplay="TOP" layoutX="981.0" layoutY="39.0" onAction="#home" prefHeight="37.0" prefWidth="52.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@z20%20.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="1040.0" layoutY="39.0" onAction="#exit" prefHeight="64.0" prefWidth="55.0" text="Logout">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@z21%20.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="170.0" fitWidth="200.0" layoutX="867.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="122.0" fitWidth="129.0" layoutX="-3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z22.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="507.0" layoutY="138.0" onAction="#search_doctor" style="-fx-background-color: #258bbf;" text="Search" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="1.0" layoutY="221.0" prefHeight="8.0" prefWidth="1127.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="p_delet" layoutY="25.0" prefHeight="655.0" prefWidth="1127.0" style="-fx-background-color: #dddddd;">
+         <children>
+            <Label layoutX="109.0" layoutY="31.0" prefHeight="72.0" prefWidth="1018.0" style="-fx-background-color: #258bbf;" text="  Delete Doctor" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="160.0" prefHeight="25.0" prefWidth="70.0" text="Doctor ID" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="d_id" focusColor="BLACK" layoutX="151.0" layoutY="154.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="68.0" layoutY="268.0" prefHeight="25.0" prefWidth="70.0" text="F_Name" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="d_fn" disable="true" focusColor="BLACK" layoutX="151.0" layoutY="262.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="d_ln" disable="true" focusColor="BLACK" layoutX="487.0" layoutY="262.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="408.0" layoutY="268.0" prefHeight="25.0" prefWidth="70.0" text="L_Name" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="331.0" prefHeight="25.0" prefWidth="70.0" text="D_O_B" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="d_dob" disable="true" focusColor="BLACK" layoutX="151.0" layoutY="325.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="d_phone" disable="true" focusColor="BLACK" layoutX="151.0" layoutY="393.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="d_gender" disable="true" focusColor="BLACK" layoutX="151.0" layoutY="460.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="d_ms" disable="true" focusColor="BLACK" layoutX="151.0" layoutY="523.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="d_address" disable="true" focusColor="BLACK" layoutX="487.0" layoutY="325.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="402.0" layoutY="326.0" prefHeight="25.0" prefWidth="70.0" text="Address" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="400.0" prefHeight="25.0" prefWidth="70.0" text="Phone" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="463.0" prefHeight="25.0" prefWidth="70.0" text="Gender" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="531.0" prefHeight="25.0" prefWidth="70.0" text="M_Status" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="d_email" disable="true" focusColor="BLACK" layoutX="487.0" layoutY="394.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="d_salary" disable="true" focusColor="BLACK" layoutX="487.0" layoutY="460.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="d_user" disable="true" focusColor="BLACK" layoutX="487.0" layoutY="523.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="404.0" layoutY="404.0" prefHeight="25.0" prefWidth="70.0" text="Email" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="394.0" layoutY="467.0" prefHeight="25.0" prefWidth="70.0" text="Salary" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="382.0" layoutY="525.0" prefHeight="25.0" prefWidth="77.0" text="Username" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="598.0" prefHeight="25.0" prefWidth="70.0" text="password" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="d_pass" disable="true" focusColor="BLACK" layoutX="150.0" layoutY="587.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton contentDisplay="TOP" layoutX="981.0" layoutY="39.0" onAction="#home" prefHeight="37.0" prefWidth="52.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@z20%20.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="1040.0" layoutY="39.0" onAction="#exit" prefHeight="64.0" prefWidth="55.0" text="Logout">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@z21%20.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="170.0" fitWidth="200.0" layoutX="867.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="122.0" fitWidth="129.0" layoutX="-3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z22.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="507.0" layoutY="138.0" onAction="#delete_doctor" style="-fx-background-color: #258bbf;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="1.0" layoutY="221.0" prefHeight="8.0" prefWidth="1127.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="p_update" layoutY="25.0" prefHeight="655.0" prefWidth="1127.0" style="-fx-background-color: #dddddd;">
+         <children>
+            <Label layoutX="109.0" layoutY="31.0" prefHeight="72.0" prefWidth="1018.0" style="-fx-background-color: #258bbf;" text="  Update Doctor" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="160.0" prefHeight="25.0" prefWidth="70.0" text="Doctor ID" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="u_id" focusColor="BLACK" layoutX="151.0" layoutY="154.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="68.0" layoutY="268.0" prefHeight="25.0" prefWidth="70.0" text="F_Name" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="u_fn" focusColor="BLACK" layoutX="151.0" layoutY="262.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="u_ln" focusColor="BLACK" layoutX="487.0" layoutY="262.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="408.0" layoutY="268.0" prefHeight="25.0" prefWidth="70.0" text="L_Name" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="331.0" prefHeight="25.0" prefWidth="70.0" text="D_O_B" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="u_dob" focusColor="BLACK" layoutX="151.0" layoutY="325.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="u_phone" focusColor="BLACK" layoutX="151.0" layoutY="393.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="u_gender" focusColor="BLACK" layoutX="151.0" layoutY="460.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="u_ms" focusColor="BLACK" layoutX="151.0" layoutY="523.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="u_address" focusColor="BLACK" layoutX="487.0" layoutY="325.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="402.0" layoutY="326.0" prefHeight="25.0" prefWidth="70.0" text="Address" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="400.0" prefHeight="25.0" prefWidth="70.0" text="Phone" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="463.0" prefHeight="25.0" prefWidth="70.0" text="Gender" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="531.0" prefHeight="25.0" prefWidth="70.0" text="M_Status" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="u_email" focusColor="BLACK" layoutX="487.0" layoutY="394.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="u_salary" focusColor="BLACK" layoutX="487.0" layoutY="460.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="u_user" focusColor="BLACK" layoutX="487.0" layoutY="523.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="404.0" layoutY="404.0" prefHeight="25.0" prefWidth="70.0" text="Email" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="394.0" layoutY="467.0" prefHeight="25.0" prefWidth="70.0" text="Salary" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="382.0" layoutY="525.0" prefHeight="25.0" prefWidth="77.0" text="Username" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="598.0" prefHeight="25.0" prefWidth="70.0" text="password" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="u_pass" focusColor="BLACK" layoutX="150.0" layoutY="587.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton contentDisplay="TOP" layoutX="981.0" layoutY="39.0" onAction="#home" prefHeight="37.0" prefWidth="52.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@z20%20.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="1040.0" layoutY="39.0" onAction="#exit" prefHeight="64.0" prefWidth="55.0" text="Logout">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@z21%20.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="170.0" fitWidth="200.0" layoutX="867.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="122.0" fitWidth="129.0" layoutX="-3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z22.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="507.0" layoutY="138.0" onAction="#update_doctor" style="-fx-background-color: #258bbf;" text="Update" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="1.0" layoutY="221.0" prefHeight="8.0" prefWidth="1127.0" />
+            <JFXButton layoutX="355.0" layoutY="138.0" onAction="#search_for_update" style="-fx-background-color: #258bbf;" text="Search" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="p_add" layoutY="25.0" prefHeight="655.0" prefWidth="1127.0" style="-fx-background-color: #dddddd;">
+         <children>
+            <Label layoutX="109.0" layoutY="31.0" prefHeight="72.0" prefWidth="1018.0" style="-fx-background-color: #258bbf;" text="  Add Doctor" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="160.0" prefHeight="25.0" prefWidth="70.0" text="Doctor ID" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="add_id" disable="true" focusColor="BLACK" layoutX="151.0" layoutY="154.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="68.0" layoutY="268.0" prefHeight="25.0" prefWidth="70.0" text="F_Name" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="add_fname" focusColor="BLACK" layoutX="151.0" layoutY="262.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="add_lname" focusColor="BLACK" layoutX="487.0" layoutY="262.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="408.0" layoutY="268.0" prefHeight="25.0" prefWidth="70.0" text="L_Name" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="331.0" prefHeight="25.0" prefWidth="70.0" text="D_O_B" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="add_d_o_b" focusColor="BLACK" layoutX="151.0" layoutY="325.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="add_phone" focusColor="BLACK" layoutX="151.0" layoutY="393.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="add_gender" focusColor="BLACK" layoutX="151.0" layoutY="460.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="add_MS" focusColor="BLACK" layoutX="151.0" layoutY="523.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="add_adress" focusColor="BLACK" layoutX="487.0" layoutY="325.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="402.0" layoutY="326.0" prefHeight="25.0" prefWidth="70.0" text="Address" textFill="#258bbf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="400.0" prefHeight="25.0" prefWidth="70.0" text="Phone" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="463.0" prefHeight="25.0" prefWidth="70.0" text="Gender" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="531.0" prefHeight="25.0" prefWidth="70.0" text="M_Status" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="add_email" focusColor="BLACK" layoutX="487.0" layoutY="394.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="add_salary" focusColor="BLACK" layoutX="487.0" layoutY="460.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="add_user" focusColor="BLACK" layoutX="487.0" layoutY="523.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="404.0" layoutY="404.0" prefHeight="25.0" prefWidth="70.0" text="Email" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="394.0" layoutY="467.0" prefHeight="25.0" prefWidth="70.0" text="Salary" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="382.0" layoutY="525.0" prefHeight="25.0" prefWidth="77.0" text="Username" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="598.0" prefHeight="25.0" prefWidth="70.0" text="password" textFill="DODGERBLUE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="add_pass" focusColor="BLACK" layoutX="150.0" layoutY="587.0" style="-fx-background-color: #ffffff;">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton contentDisplay="TOP" layoutX="981.0" layoutY="39.0" onAction="#home" prefHeight="37.0" prefWidth="52.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@z20%20.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <JFXButton contentDisplay="TOP" layoutX="1040.0" layoutY="39.0" onAction="#exit" prefHeight="64.0" prefWidth="55.0" text="Logout">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@z21%20.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+            <ImageView fitHeight="170.0" fitWidth="200.0" layoutX="895.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="122.0" fitWidth="129.0" layoutX="-3.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@z22.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="567.0" layoutY="138.0" onAction="#add_doctor" style="-fx-background-color: #258bbf;" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>
